@@ -15,7 +15,29 @@ Dynamic replacement of hyperlinks is done using MQTT over Websockets.
 - A browser supporting JavaScript and Websockets
 - A backend MQTT broker
 
+## Build & Run
+
+Run the application from any webserver, or create a docker image and start a container.
+
+The initial image size will be ~45 MB based on the `nginx:alpine` base image.
+
+```bash
+docker build -t active-tiles .
+```
+
+```bash
+docker run --rm -d --name active-tiles -p 8047:80 active-tiles
+```
+
+Then open `http://localhost:8047` in a browser.
+
 ## Structure
+
+The goal of the project is to keep it stupid simple and add required complexity
+to some backend as far as possible. 
+
+However, some Javascript will be required to work with MQTT over Websockets.
+And a backend server is required to avoid any disclosure of (broker) credentials.
 
 ### HTML
 
