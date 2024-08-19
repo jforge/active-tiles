@@ -1,8 +1,10 @@
 # Active Tiles
 
-This project provides a simple customizable HTML design for a responsive grid of hyperlink tiles.
-
+This project provides a simple customizable HTML design for a responsive grid of hyperlink tiles. 
 Dynamic replacement of hyperlinks is done using MQTT over Websockets.
+
+![Active Tiles](./img/active-tiles.webp)
+
 
 ## Stack
 

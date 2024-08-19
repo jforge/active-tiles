@@ -1,2 +1,5 @@
+Dockerfile
+.editorconfig
 .git
+.gitignore
 *.md
