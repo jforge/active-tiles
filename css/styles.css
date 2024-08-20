@@ -18,12 +18,12 @@ body {
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
-    text-decoration: none;
     color: #ffffff;
     transition: transform 0.2s, box-shadow 0.2s;
     position: relative;
     overflow: hidden;
     height: 200px; /* Set a fixed height for consistency */
+    cursor: pointer;
 }
 
 .tile::before {
@@ -64,6 +64,22 @@ body {
     background-image: url('https://via.placeholder.com/400/0000FF');
 }
 
+.tile5 {
+    background-image: url('https://via.placeholder.com/400/FF0000');
+}
+
+.tile6 {
+    background-image: url('https://via.placeholder.com/400/00FF00');
+}
+
+.tile7 {
+    background-image: url('https://via.placeholder.com/400/0000FF');
+}
+
+.tile8 {
+    background-image: url('https://via.placeholder.com/400/CAFEEE');
+}
+
 .tile h3 {
     margin-top: 0;
     margin-bottom: 10px;
@@ -74,4 +90,48 @@ body {
     margin: 0;
     font-size: 0.9em;
     color: #ddd;
+}
+
+.edit-links {
+    margin-top: 40px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.edit-links h2 {
+    margin-top: 0;
+}
+
+.edit-links form {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+}
+
+.edit-links label {
+    font-weight: bold;
+}
+
+.edit-links input[type="url"] {
+    padding: 8px;
+    font-size: 1em;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+
+.edit-links button {
+    padding: 10px 15px;
+    font-size: 1em;
+    color: #fff;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.edit-links button:hover {
+    background-color: #0056b3;
 }

@@ -5,6 +5,7 @@ FROM nginx:alpine
 COPY * /usr/share/nginx/html/
 COPY css/ /usr/share/nginx/html/css/
 COPY img/ /usr/share/nginx/html/img/
+COPY js/ /usr/share/nginx/html/js/
 
 # Expose port 80 to access the web server
 EXPOSE 80

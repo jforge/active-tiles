@@ -15,22 +15,23 @@
 </head>
 <body>
 <div class="tile-container">
-    <a href="#" class="tile tile1">
+    <div class="tile" id="tile1">
         <h3>Tile 1</h3>
         <p>Link to something interesting.</p>
-    </a>
-    <a href="#" class="tile tile2">
+    </div>
+    <div class="tile" id="tile2">
         <h3>Tile 2</h3>
         <p>Another interesting link.</p>
-    </a>
-    <a href="#" class="tile tile3">
+    </div>
+    <div class="tile" id="tile3">
         <h3>Tile 3</h3>
         <p>Explore this link.</p>
-    </a>
-    <a href="#" class="tile tile4" target="_blank" rel="noopener noreferrer">
+    </div>
+    <div class="tile" id="tile4">
         <h3>Tile 4</h3>
         <p>Discover more here.</p>
-    </a>
+    </div>
+
     <a href="https://mosquitto.org/" class="tile tile5" target="_blank" rel="noopener noreferrer">
         <h3>Mosquitto</h3>
         <p>The Eclipse MQTT broker</p>
@@ -48,5 +49,30 @@
         <p>Using the MQTT Input Telegraf plugin</p>
     </a>
 </div>
+
+<div class="edit-links">
+    <h2>Edit Links</h2>
+    <form id="linkForm">
+        <div>
+            <label for="link1">Tile 1 URL:</label>
+            <input type="url" id="link1" placeholder="Enter URL for Tile 1">
+        </div>
+        <div>
+            <label for="link2">Tile 2 URL:</label>
+            <input type="url" id="link2" placeholder="Enter URL for Tile 2">
+        </div>
+        <div>
+            <label for="link3">Tile 3 URL:</label>
+            <input type="url" id="link3" placeholder="Enter URL for Tile 3">
+        </div>
+        <div>
+            <label for="link4">Tile 4 URL:</label>
+            <input type="url" id="link4" placeholder="Enter URL for Tile 4">
+        </div>
+        <button type="submit">Save Links</button>
+    </form>
+</div>
+
+<script src="js/script.js"></script>
 </body>
 </html>
