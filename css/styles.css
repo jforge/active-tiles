@@ -13,18 +13,55 @@ body {
 }
 
 .tile {
-    background-color: #ffffff;
+    background-size: cover;
+    background-position: center;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 20px;
     text-decoration: none;
-    color: #333;
+    color: #ffffff;
     transition: transform 0.2s, box-shadow 0.2s;
+    position: relative;
+    overflow: hidden;
+    height: 200px; /* Set a fixed height for consistency */
+}
+
+.tile::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Add a dark overlay for text readability */
+    z-index: 0;
+}
+
+.tile h3,
+.tile p {
+    position: relative;
+    z-index: 1;
 }
 
 .tile:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.tile1 {
+    background-image: url('https://via.placeholder.com/400');
+}
+
+.tile2 {
+    background-image: url('https://via.placeholder.com/400/FF0000');
+}
+
+.tile3 {
+    background-image: url('https://via.placeholder.com/400/00FF00');
+}
+
+.tile4 {
+    background-image: url('https://via.placeholder.com/400/0000FF');
 }
 
 .tile h3 {
@@ -36,5 +73,5 @@ body {
 .tile p {
     margin: 0;
     font-size: 0.9em;
-    color: #666;
+    color: #ddd;
 }
